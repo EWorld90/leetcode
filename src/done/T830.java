@@ -13,7 +13,7 @@ public class T830 {
 	@Test
     public void testSum1() {
 		List<List<Integer>> resList = largeGroupPositions("aaa");
-		System.out.println("res length£º" + resList.size());
+		System.out.println("res lengthÂ£Âº" + resList.size());
 		int test = resList.get(0).get(0);
 		Assert.assertEquals((int) resList.get(0).get(0), 0);
 		Assert.assertEquals((int) resList.get(0).get(1), 2);

@@ -3,10 +3,10 @@ package done;
 import java.util.*;
 
 public class T763 {
-	//Ì°ĞÄËã·¨
+	//è´ªå¿ƒç®—æ³•
 	public List<Integer> partitionLabels(String S) {
 		int[] charNum = new int[26];
-		//Í³¼ÆÃ¿¸ö×ÖÄ¸×îºó³öÏÖµÄÎ»ÖÃ
+		//ç»Ÿè®¡æ¯ä¸ªå­—æ¯æœ€åå‡ºç°çš„ä½ç½®
 		for (int i = 0; i < S.length(); i++) {
 			charNum[(int) S.charAt(i) - 'a'] = i;
 		}
@@ -16,7 +16,7 @@ public class T763 {
 		for (int i = 0; i < S.length(); i++) {
 			end = Math.max(end, charNum[(int) S.charAt(i) - 'a']);
 			
-			//endÖµµÈÓÚÏÂ±êÊ±£¬ÕÒµ½·ûºÏµÄÆ¬¶Î£¬ÖØÖÃstart,endµÄÖµ
+			//endå€¼ç­‰äºä¸‹æ ‡æ—¶ï¼Œæ‰¾åˆ°ç¬¦åˆçš„ç‰‡æ®µï¼Œé‡ç½®start,endçš„å€¼
 			if (end == i) {
 				result.add(end - start + 1);
 				start = end + 1;
@@ -27,7 +27,7 @@ public class T763 {
     }
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
 	}
 

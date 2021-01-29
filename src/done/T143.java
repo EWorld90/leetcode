@@ -3,13 +3,13 @@ package done;
 import util.ListNode;
 
 public class T143 {
-	//°ë·ÖÁ´±í+ÓÒ°ë·´×ª+ºÏ²¢
+	//åŠåˆ†é“¾è¡¨+å³åŠåè½¬+åˆå¹¶
     public void reorderList(ListNode head) {
         if (head == null) {
         	return;
         }
         
-        ListNode mid = middleNode(head);	//mid½ÚµãÎªÖĞ¼ä½ÚµãÇ°Ò»¸ö½Úµã
+        ListNode mid = middleNode(head);	//midèŠ‚ç‚¹ä¸ºä¸­é—´èŠ‚ç‚¹å‰ä¸€ä¸ªèŠ‚ç‚¹
         ListNode left = head;
         ListNode right = mid.next;
         
@@ -29,7 +29,7 @@ public class T143 {
         }
     }
     
-    //·´×ªÁ´±í
+    //åè½¬é“¾è¡¨
     public ListNode reverseList(ListNode head) {
 		ListNode prev = null;
 		ListNode curr = head;
@@ -45,7 +45,7 @@ public class T143 {
 		return prev;
     }
     
-    //ÕÒµ½ÖĞ¼ä½Úµã ·µ»ØÖĞ¼ä½ÚµãÇ°Ò»¸ö½Úµã
+    //æ‰¾åˆ°ä¸­é—´èŠ‚ç‚¹ è¿”å›ä¸­é—´èŠ‚ç‚¹å‰ä¸€ä¸ªèŠ‚ç‚¹
     public ListNode middleNode(ListNode head) {
 		ListNode fast = head, slow = head;
 		
@@ -59,7 +59,7 @@ public class T143 {
     }
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
 	}
 

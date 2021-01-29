@@ -5,18 +5,18 @@ import java.util.*;
 import util.ListNode;
 
 public class T234 {
-	//½èÖúÊı×éµÄ½â·¨
+	//å€ŸåŠ©æ•°ç»„çš„è§£æ³•
 	public boolean isPalindrome(ListNode head) {
         List<Integer> vals = new ArrayList<Integer>();
 
-        // ½«Á´±íµÄÖµ¸´ÖÆµ½Êı×éÖĞ
+        // å°†é“¾è¡¨çš„å€¼å¤åˆ¶åˆ°æ•°ç»„ä¸­
         ListNode currNode = head;
         while (currNode != null) {
             vals.add(currNode.val);
             currNode = currNode.next;
         }
 
-        // Ê¹ÓÃË«Ö¸ÕëÅĞ¶ÏÊÇ·ñ»ØÎÄ
+        // ä½¿ç”¨åŒæŒ‡é’ˆåˆ¤æ–­æ˜¯å¦å›æ–‡
         int front = 0;
         int back = vals.size() - 1;
         while (front < back) {
@@ -30,7 +30,7 @@ public class T234 {
     }
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
 	}
 

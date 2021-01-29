@@ -1,18 +1,18 @@
 package done;
 
 public class T844 {
-	//Õ»Ëã·¨
-	//Ë«Ö¸ÕëËã·¨ Óöµ½ÍË¸ñ·ûÔòÈÃÖ¸ÕëÌø¹ı
+	//æ ˆç®—æ³•
+	//åŒæŒ‡é’ˆç®—æ³• é‡åˆ°é€€æ ¼ç¬¦åˆ™è®©æŒ‡é’ˆè·³è¿‡
 	public static boolean backspaceCompare(String S, String T) {
 		int pointS = S.length() - 1, pointT = T.length() - 1;
 		int skipS = 0, skipT = 0;
 		
 		while (pointS >= 0 || pointT >= 0) {
 			while (pointS >= 0) {
-				if (S.charAt(pointS) == '#') {	//ÍË¸ñ·û Ö¸ÕëÌø¹ı
+				if (S.charAt(pointS) == '#') {	//é€€æ ¼ç¬¦ æŒ‡é’ˆè·³è¿‡
 					pointS--;
 					skipS++;
-				} else if (skipS > 0) {			//ÍË¸ñ¼ÆÊıÆ÷´óÓÚÁã Ö¸ÕëÌø¹ı
+				} else if (skipS > 0) {			//é€€æ ¼è®¡æ•°å™¨å¤§äºé›¶ æŒ‡é’ˆè·³è¿‡
 					skipS--;
 					pointS--;
 				} else {
@@ -47,7 +47,7 @@ public class T844 {
     }
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
 	}
 

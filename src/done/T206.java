@@ -3,7 +3,7 @@ package done;
 import util.ListNode;
 
 public class T206 {
-	//µü´ú·¨·´×ª
+	//è¿­ä»£æ³•åè½¬
 	public ListNode reverseList(ListNode head) {
 		ListNode prev = null;
 		ListNode curr = head;
@@ -19,14 +19,14 @@ public class T206 {
 		return prev;
     }
 	
-	//µİ¹é·¨·´×ª
+	//é€’å½’æ³•åè½¬
 	public ListNode reverseList2(ListNode head) {
-		//ÖÕÖ¹Ìõ¼ş µ±Ç°½ÚµãÎª¿Õ»òÏÂ¸ö½ÚµãÎª¿Õ
+		//ç»ˆæ­¢æ¡ä»¶ å½“å‰èŠ‚ç‚¹ä¸ºç©ºæˆ–ä¸‹ä¸ªèŠ‚ç‚¹ä¸ºç©º
 		if(head == null || head.next == null) {
 			return head;
 		}
 		
-		ListNode curr = reverseList2(head.next);	//currÎªµİ¹éµÃµ½µÄÎ²½áµã
+		ListNode curr = reverseList2(head.next);	//currä¸ºé€’å½’å¾—åˆ°çš„å°¾ç»“ç‚¹
 		
 		head.next.next = head;
 		head.next = null;

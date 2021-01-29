@@ -1,25 +1,25 @@
 package done;
 
 public class T977 {
-	//Ë«Ö¸Õë·¨
+	//åŒæŒ‡é’ˆæ³•
     public static int[] sortedSquares(int[] A) {
     	int lenA = A.length;
     	int posIndex = -1;
-    	//È·ÈÏÕı¸ºÊı·Ö½ç
+    	//ç¡®è®¤æ­£è´Ÿæ•°åˆ†ç•Œ
     	for(int i = 0; i < lenA; i++) {
     		if (A[i] >= 0) {
     			posIndex = i;
     			break;
     		}
     		
-    		//ÎŞÕıÊı£¬½«ÕıÊıÖ¸ÕëÖ¸ÏòÄ©Î²
+    		//æ— æ­£æ•°ï¼Œå°†æ­£æ•°æŒ‡é’ˆæŒ‡å‘æœ«å°¾
     		posIndex = lenA;
     	}
     	
     	int[] result = new int[lenA];
     	int resIndex = 0;
     	int posPoint = posIndex, negPoint = posIndex - 1;
-    	//Ë«Ö¸ÕëÅÅĞò£¬ÕıÊıÖ¸Õëµ½Ä©Î²²¢ÇÒ·ÇÕıÊıÖ¸Õëµ½¿ªÍ·Ê± ½áÊøÑ­»·
+    	//åŒæŒ‡é’ˆæ’åºï¼Œæ­£æ•°æŒ‡é’ˆåˆ°æœ«å°¾å¹¶ä¸”éæ­£æ•°æŒ‡é’ˆåˆ°å¼€å¤´æ—¶ ç»“æŸå¾ªç¯
     	while(posPoint < lenA || negPoint >= 0) {
     		if (posPoint == lenA) {
     			result[resIndex] = A[negPoint] * A[negPoint];

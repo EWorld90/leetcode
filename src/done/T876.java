@@ -3,7 +3,7 @@ package done;
 import util.ListNode;
 
 public class T876 {
-	//˫ָ�뷨
+	//双指针
 	public ListNode middleNode(ListNode head) {
 		ListNode fast = head, slow = head;
 		
