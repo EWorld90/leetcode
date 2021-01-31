@@ -41,7 +41,7 @@ public class UnionFind {
 	    setCount--;						//有两节点合并，连通分量数减1
 	}
 	
-	public boolean connected(int x, int y) {
+	public boolean isConnected(int x, int y) {
         x = find(x);
         y = find(y);
         return x == y;
