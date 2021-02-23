@@ -1,9 +1,9 @@
-package done;
+package dailytopic;
 
 import util.ListNode;
 
 public class T19 {
-	//Ë«Ö¸Õë Ò»´Î±éÀú
+	//Ë«Ö¸ï¿½ï¿½ Ò»ï¿½Î±ï¿½ï¿½ï¿½
 	public static ListNode removeNthFromEnd(ListNode head, int n) {
 		ListNode dummy = new ListNode(0, head);
 		ListNode first = head;

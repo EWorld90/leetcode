@@ -1,4 +1,4 @@
-package done;
+package dailytopic;
 
 public class T925 {
 	public boolean isLongPressedName(String name, String typed) {

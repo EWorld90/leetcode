@@ -1,4 +1,4 @@
-package done;
+package dailytopic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,20 +13,20 @@ public class T1002 {
 		for(String letter : A) {
 			int[] indFreq = new int[26];
 			
-			//±éÀúµ±Ç°×Ö·û´®
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ö·ï¿½ï¿½ï¿½
 			for(int i=0; i<letter.length(); i++) {
-				int temp = letter.charAt(i) - 'a';	//ÌáÈ¡×ÖÄ¸¶ÔÓ¦µÄÊý×Ö
-//				System.out.println("µ±Ç°×ÖÄ¸" + letter.charAt(i) + "£¬Êý×Ö" + temp);	//test
+				int temp = letter.charAt(i) - 'a';	//ï¿½ï¿½È¡ï¿½ï¿½Ä¸ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//				System.out.println("ï¿½ï¿½Ç°ï¿½ï¿½Ä¸" + letter.charAt(i) + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + temp);	//test
 				indFreq[temp]++;
 			}
 			
-			//¶Ô±È½á¹ûÊý×é
+			//ï¿½Ô±È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			for(int i=0; i<26; i++) {
 				allFreq[i] = Math.min(allFreq[i], indFreq[i]);
 			}
 		}
 		
-		//½á¹ûµ¼ÈëÁÐ±í
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
 		for(int i=0; i<26; i++) {
 			for(int j=0; j<allFreq[i]; j++) {
 				result.add(String.valueOf((char) (i + 'a')));

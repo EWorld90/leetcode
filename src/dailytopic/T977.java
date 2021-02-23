@@ -1,4 +1,4 @@
-package done;
+package dailytopic;
 
 public class T977 {
 	//双指针法
